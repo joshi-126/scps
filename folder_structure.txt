@@ -1,0 +1,70 @@
+SCPS/
+│── index.php                 # Home page (login selection)
+│── admin_login.php
+│── faculty_login.php
+│── student_login.php
+│── auth_admin.php
+│── auth_faculty.php
+│── auth_student.php
+│── config.php                # Database connection
+│
+├── images/                   # PNG/JPG files for role icons and UI
+│   ├── admin.png
+│   ├── faculty.png
+│   ├── student.png
+│   ├── logo.png
+│   └── module_icons/
+│
+├── css/                      # Stylesheets
+│   └── style.css
+│
+├── js/                       # JavaScript files (animations, popups)
+│   └── main.js
+│
+├── modules/                  # Main Modules folder
+│   │
+│   ├── college_erp/          # Module 1: College ERP
+│   │   ├── upload_marks.php
+│   │   ├── upload_timetable.php
+│   │   ├── upload_fee_details.php
+│   │   ├── upload_backlogs.php
+│   │   └── view_erp.php
+│   │
+│   ├── lost_found/           # Module 2: Lost & Found
+│   │   ├── upload_lost.php
+│   │   ├── view_lost.php
+│   │   ├── respond_lost.php
+│   │   └── lost_images/
+│   │
+│   ├── old_book_exchange/    # Module 3: Old Book Exchange
+│   │   ├── upload_book.php
+│   │   ├── view_books.php
+│   │   ├── respond_book.php
+│   │   └── book_images/
+│   │
+│   ├── event_management/     # Module 4: Event Management
+│   │   ├── create_event.php
+│   │   ├── register_event.php
+│   │   ├── view_event.php
+│   │   └── event_images/
+│   │
+│   ├── lost_on_phone/        # Module 5: Lost on Phone
+│   │   ├── upload_lost_phone.php
+│   │   ├── view_lost_phone.php
+│   │   ├── respond_lost_phone.php
+│   │   └── lost_phone_images/
+│
+├── admin_panel/              # Admin-only features
+│   ├── dashboard.php         # Shows last 2 posts from Lost & Found + Old Book Exchange
+│   ├── manage_users.php
+│   ├── respond_requests.php
+│
+└── database/                 # SQL files for setup
+    ├── admin.sql
+    ├── faculty.sql
+    ├── student.sql
+    ├── college_erp.sql
+    ├── lost_found.sql
+    ├── old_book_exchange.sql
+    ├── event_management.sql
+    ├── lost_on_phone.sql
