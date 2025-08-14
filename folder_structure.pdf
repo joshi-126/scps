@@ -1,0 +1,62 @@
+SCPS/
+│── config/
+│   ├── config.php                 # DB connection settings
+│   ├── auth.php                   # Authentication functions
+│   ├── role_check.php              # Role-based access control checks
+│
+│── assets/
+│   ├── css/
+│   │   ├── style.css               # Main styles
+│   │   ├── animations.css          # Animated effects
+│   ├── js/
+│   │   ├── main.js                 # Common JS functions
+│   │   ├── popup.js                # Popup animations
+│   ├── images/
+│   │   ├── logo.png
+│   │   ├── student.png
+│   │   ├── faculty.png
+│   │   ├── admin.png
+│   │   ├── lostfound/              # Lost & Found images
+│   │   ├── oldbooks/               # Old Book Exchange images
+│
+│── modules/
+│   ├── erp/
+│   │   ├── index.php               # ERP dashboard
+│   │   ├── marks_upload.php        # Faculty uploads marks
+│   │   ├── fee_upload.php          # Admin uploads fee details
+│   │   ├── backlog_upload.php      # Admin uploads backlog details
+│   │   ├── timetable_upload.php    # Faculty uploads timetable
+│
+│   ├── lost_found/
+│   │   ├── index.php               # Lost & Found dashboard
+│   │   ├── add_item.php            # Upload lost/found item
+│   │   ├── view_items.php          # View all items
+│   │   ├── respond_item.php        # Admin response page
+│
+│   ├── e_learning/
+│   │   ├── index.php               # E-Learning dashboard
+│   │   ├── upload_notes.php        # Faculty uploads notes
+│   │   ├── view_notes.php          # Students view notes
+│
+│   ├── event_handling/
+│   │   ├── index.php               # Event dashboard
+│   │   ├── create_event.php        # Admin creates event
+│   │   ├── register_event.php      # Student/Faculty register
+│   │   ├── view_events.php         # View events list
+│
+│   ├── old_book_exchange/
+│   │   ├── index.php               # Old Book Exchange dashboard
+│   │   ├── add_book.php            # Add book for sale/exchange
+│   │   ├── view_books.php          # View available books
+│
+│── roles/
+│   ├── admin_dashboard.php         # Admin panel home
+│   ├── faculty_dashboard.php       # Faculty panel home
+│   ├── student_dashboard.php       # Student panel home
+│
+│── auth/
+│   ├── login.php                   # Common login handler
+│   ├── logout.php                  # Logout
+│
+│── index.php                       # Homepage with 3 login options
+│── .htaccess                       # Security rules (optional)
