@@ -1,0 +1,35 @@
+CREATE TABLE faculty (
+    employee_id INT PRIMARY KEY,
+    username VARCHAR(5) UNIQUE NOT NULL,
+    password VARCHAR(13) NOT NULL,
+    emp_name VARCHAR(25) NOT NULL,
+    department VARCHAR(40),
+    address VARCHAR(20),
+    attendance INT,         -- Number of days attended in this month
+    feedback_percentage DECIMAL(5,2), -- Feedback % (e.g., 85.50)
+    salary DECIMAL(10,2),        -- Between 30000 to 70000
+    classes_taken INT            -- No. of classes taken this month
+);
+INSERT INTO faculty
+(employee_id, username, password, emp_name, department, address, attendance, feedback_percentage, salary, classes_taken) VALUES
+(111, '111', 'Faculty@111', 'D.veera chakram', 'Computer Science', 'Kakinada', 24, 92.50, 65000, 45),
+(112, '112', 'Faculty@112', 'Ms. jaya pavani', 'computer science', 'Rajahmundry', 22, 88.20, 48000, 39),
+(113, '113', 'Faculty@113', 'Mr. Kusuma Kumar', 'Mechanical', 'Yanam', 20, 85.00, 52000, 41),
+(114, '114', 'Faculty@114', 'Ms. lova Lakshmi', 'Computer science', 'Pithapuram', 25, 90.75, 70000, 50),
+(115, '115', 'Faculty@115', 'Mr. Krishna Prasad', 'IT', 'rajahmundry', 23, 87.40, 61000, 42),
+(116, '116', 'Faculty@116', 'Ms. haneesha', 'Computer science', 'annavaram', 19, 80.60, 45000, 35),
+(117, '117', 'Faculty@117', 'Mr. Srinivas', 'Mathematics', 'Annavaram', 26, 93.10, 55000, 47),
+(118, '118', 'Faculty@118', 'Dr. Neelima', 'Physics', 'Gollaprolu', 21, 82.30, 47000, 36),
+(119, '119', 'Faculty@119', 'Mr. Manoj', 'Chemistry', 'Rajahmundry', 22, 84.90, 49500, 38),
+(120, '120', 'Faculty@120', 'Ms. Kavitha', 'English', 'Kakinada', 25, 91.20, 51000, 44),
+(121, '121', 'Faculty@121', 'Mr. Arjun', 'Electronics', 'Yanam', 20, 76.50, 35000, 32),
+(122, '122', 'Faculty@122', 'Ms. Meena', 'computer science', 'Korangi', 23, 88.00, 60000, 41),
+(123, '123', 'Faculty@123', 'Mr. Raj', 'Mechanical', 'Pithapuram', 24, 85.70, 53000, 43),
+(124, '124', 'Faculty@124', 'Ms. Rekha', 'Computer Science', 'Chebrolu', 21, 79.90, 38000, 34),
+(125, '125', 'Faculty@125', 'Ms. Kalpana', 'Mathematics', 'pithapuram', 25, 92.10, 67000, 48),
+(126, '126', 'Faculty@126', 'Mr. Ramesh', 'Physics', 'Kakinada', 18, 74.80, 32000, 29),
+(127, '127', 'Faculty@127', 'Mr. Suresh', 'Chemistry', 'Rajahmundry', 22, 83.50, 46000, 37),
+(128, '128', 'Faculty@128', 'Mr. Manikanta', 'English', 'Annavaram', 23, 86.40, 49500, 40),
+(129, '129', 'Faculty@129', 'Mr. Naresh', 'Civil', 'Yanam', 21, 81.70, 42000, 33),
+(130, '130', 'Faculty@130', 'Ms. Priya', 'Electrical', 'Pithapuram', 24, 89.60, 58000, 46);
+

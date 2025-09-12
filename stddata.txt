@@ -1,0 +1,51 @@
+CREATE TABLE students (
+    roll_number VARCHAR(15) PRIMARY KEY,
+    username VARCHAR(10) UNIQUE NOT NULL,
+    password VARCHAR(12) NOT NULL,
+    std_name VARCHAR(25) NOT NULL,
+    std_address VARCHAR(25),
+    phone VARCHAR(15)
+);
+
+
+INSERT INTO students (roll_number, username, password, std_name, std_address, phone) VALUES
+('23249-cm-117', '23249cm117', 'student@117', 'T karthik', 'Kakinada', 'XXXXXX1201'),
+('23249-cm-126', '23249cm126', 'student@126', 'Y Joshi manohar', 'yendapalli', 'XXXXXX3482'),
+('23249-cm-102', '23249cm102', 'student@102', 'Arjun Das', 'Pithapuram', 'XXXXXX9821'),
+('23249-cm-103', '23249cm103', 'student@103', 'Lakshmi narayana', 'Korangi', 'XXXXXX4432'),
+('23249-cm-104', '23249cm104', 'student@104', 'Manoj kumar', 'Annavaram', 'XXXXXX6741'),
+('23249-cm-105', '23249cm105', 'student@105', 'sruthija', 'rajahmundry', 'XXXXXX9183'),
+('23249-cm-106', '23249cm106', 'student@106', 'navadeep', 'rajahmuundry', 'XXXXXX5529'),
+('23249-cm-123', '23249cm123', 'student@123', 'sai krishna', 'Yanam', 'XXXXXX7810'),
+('23249-cm-108', '23249cm108', 'student@108', 'sanapalli kiran', 'madhavapuram', 'XXXXXX9237'),
+('23249-cm-109', '23249cm109', 'student@109', 'sk.al akheer', 'kakinada', 'XXXXXX6714'),
+('23249-cm-110', '23249cm110', 'student@110', 'Rohit Sharma', 'Pithapuram', 'XXXXXX8321'),
+('23249-cm-111', '23249cm111', 'student@111', 'Harika ', 'Korangi', 'XXXXXX1593'),
+('23249-cm-112', '23249cm112', 'student@112', 'nikhil', 'Annavaram', 'XXXXXX2745'),
+('23249-cm-075', '23249cm075', 'student@075', 'N Venkatesh', 'virava', 'XXXXXX5378'),
+('23249-cm-099', '23249cm099', 'student@099', 'R Veerababu', 'samarlakota', 'XXXXXX8091'),
+('23249-cm-115', '23249cm115', 'student@115', 'k.sai mohan', 'Yanam', 'XXXXXX6127'),
+('23249-cm-116', '23249cm116', 'student@116', 't.shyam ', 'samarlakota', 'XXXXXX9432'),
+('23249-cm-132', '23249cm132', 'student@132', 'srihari', 'Rajahmundry', 'XXXXXX2849'),
+('23249-cm-118', '23249cm118', 'student@118', 'mojesh', 'Pithapuram', 'XXXXXX7651'),
+('23249-cm-120', '23249cm120', 'student@120', 'siva durga prasad', 'surampalem', 'XXXXXX4510'),
+('23249-cm-121', '23249cm121', 'student@121', 'Gireesh', 'Pithapuram', 'XXXXXX7651'),
+('23249-cm-125', '23249cm125', 'student@125', 'Bhanu prasad', 'surampalem', 'XXXXXX7651'),
+('23249-cm-129', '23249cm129', 'student@129', 'Chakri', 'annavaram', 'XXXXXX7651')
+
+;
+CREATE TABLE last_found (
+  report_id INT AUTO_INCREMENT PRIMARY KEY,
+  report_item_name VARCHAR(255) NOT NULL,
+  report_description TEXT,
+  report_image VARCHAR(500),         -- path/URL to reporter's image
+  found_item_description TEXT,
+  found_item_image VARCHAR(500),     -- path/URL to found item's image
+  depot_item_image VARCHAR(500),     -- path/URL to depot/storage image
+  responses TEXT,
+  username VARCHAR(100) NOT NULL,
+  lost_location VARCHAR(255),
+  found_location VARCHAR(255),
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

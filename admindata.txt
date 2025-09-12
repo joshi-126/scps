@@ -1,0 +1,12 @@
+-- Step 1: Create Admin table
+CREATE TABLE Admins (
+    admin_name varchar(20),
+    username VARCHAR(50) NOT NULL UNIQUE,
+    password VARCHAR(50) NOT NULL
+);
+
+-- Step 2: Insert sample 3 admins (you can modify later)
+INSERT INTO Admins (admin_name, username, password) VALUES
+('KARTHIK','karthik', 'karthik@117'),
+('SRI KRISHNA','nikhil', 'nikhil@112'),
+('JOSHI MANOHAR','manohar', 'manohar@126');
